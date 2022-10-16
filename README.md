@@ -68,11 +68,8 @@ RADANet  |2.792, 3.583, 4.495, 3.623, 0.696 | 4.129, 4.888, 5.495, 4.837, 0.559
 2DAL | 2.750, 3.460, 4.450, 3.550| -, -, -, -, -
 PFRRNet (Ours)| 2.616, 3.381, 4.342, 3.446, 0.706| 3.976, 4.578, 5.237, 4.597, 0.515
 
-## Qualitative Results of Dense Aligment
-<img src="https://github.com/Ray-tju/PFRRNet/blob/main/display/qs_small.jpg" width="400" height="700">
-
-## Qualitative Results of 3D Reconstruction 
-<img src="https://github.com/Ray-tju/PFRRNet/blob/main/display/qs_3d2_samll.jpg" width="400" height="700">
+## Qualitative Results of Dense Aligment and Qualitative Results of 3D Reconstruction 
+<img src="https://github.com/Ray-tju/PFRRNet/blob/main/display/qs_small.jpg" width="500" height="700"><img src="https://github.com/Ray-tju/PFRRNet/blob/main/display/qs_3d2_samll.jpg" width="500" height="700">
 
 # Futher Information
 If you have any problems with the code, please list the problems you encountered in the issue area, and I will reply you soon.
