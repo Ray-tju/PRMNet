@@ -5,17 +5,14 @@ First you have to make sure that you have all dependencies in place.
 
 You can create an anaconda environment called `mfirrn` using
 ```
-conda env create -n mfirrn python=3.6 ## recommended python=3.6+
-conda activate mfirrn
+conda env create -n pfrrnet python=3.6 ## recommended python=3.6+
+conda activate pfrrnet
 sudo pip3 install torch torchvision 
 sudo pip3 install numpy scipy matplotlib
 sudo pip3 install dlib
 sudo pip3 install opencv-python
 sudo pip3 install cython
 ```
-Then, download the baseline code.
-* download the [3DDFA](https://github.com/cleardusk/3DDFA)
-
 Next, compile the extension modules.
 ```
 cd utils/cython
@@ -35,7 +32,7 @@ python3 main.py -f samples/test.jpg
 ```
 Note that we suggest you choose normal image due to dlib restrictions on face capture
 
-* download our pre-trained model [Mfirrn](https://drive.google.com/file/d/1NlI9KH3tcZVA2gsLwbmQTSMUSAQzsFY-/view?usp=sharing
+* download our pre-trained model [pfrrnet](https://drive.google.com/file/d/1NlI9KH3tcZVA2gsLwbmQTSMUSAQzsFY-/view?usp=sharing
 ) via Google
 
 Due to the randomness of multi-granularity segmentation, the evaluation result will fluctuate in the range of 3.650 to 3.690.
@@ -68,6 +65,9 @@ DEFA  | 4.500, 5.560, 7.330, 5.803, 1.169 | -, -, -, -, -
 Nonlinear(CVPR2018)   | -, -, -, 4.700, - | -, -, -, -, -
 DAMDNet(ICCVW19)  | 2.907, 3.830, 4.953, 3.897, 0.837 | 4.359, 5.209, 6.028, 5.199, 0.682 
 MFIRRN  | 2.841, 3.572, 4.561, 3.658, 0.705 | 4.321, 5.051, 5.958, 5.110, 0.670 
+RADANet  |2.792, 3.583, 4.495, 3.623, 0.696 | 4.129, 4.888, 5.495, 4.837, 0.559
+2DAL | 2.750, 3.460, 4.450, 3.550| -, -, -, -, -
+PFRRNet (Ours)| 2.616, 3.381, 4.342, 3.446, 0.706| 3.976, 4.578, 5.237, 4.597, 0.515
 
 ## Qualitative Results of Dense Aligment
 <img src="https://github.com/leilimaster/MFIRRN/blob/main/display/Dense.jpg" width="700" height="500">
