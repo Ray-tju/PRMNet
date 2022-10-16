@@ -3,7 +3,7 @@
 ## Installation
 First you have to make sure that you have all dependencies in place.
 
-You can create an anaconda environment called `mfirrn` using
+You can create an anaconda environment called `pfrrnet` using
 ```
 conda env create -n pfrrnet python=3.6 ## recommended python=3.6+
 conda activate pfrrnet
@@ -18,12 +18,6 @@ Next, compile the extension modules.
 cd utils/cython
 python3 setup.py build_ext -i
 ```
-Final, adopt our model in baseline code.
-```
-Copy our model 'model/Mfirrn' to  baseline
-Replace "train.py" in the baseline with our "train.py"
-Replace "benchmark.py" in the baseline with our "benchmark.py"
-```
 
 ## Generation
 To generate results using a trained model, use
@@ -35,12 +29,13 @@ Note that we suggest you choose normal image due to dlib restrictions on face ca
 * download our pre-trained model [pfrrnet](https://drive.google.com/file/d/1NlI9KH3tcZVA2gsLwbmQTSMUSAQzsFY-/view?usp=sharing
 ) via Google
 
-Due to the randomness of multi-granularity segmentation, the evaluation result will fluctuate in the range of 3.650 to 3.690.
-
 ## Evaluation
-To eval our MFIRRN , use
+To eval our PFRRNet , use
 ```
 python benchmark.py
+```
+```
+python benchmark_3D.py
 ```
 <br>
 Note that our GPU is Nvidia RTX 3090, and the test environment is cuda V11.1, Pytorch 1.7.
@@ -49,7 +44,7 @@ Note that our GPU is Nvidia RTX 3090, and the test environment is cuda V11.1, Py
 To train our PFRRNet with wpdc and wing Loss, use
 ```
 cd training
-bash train_wqdc.sh
+bash train_pfrrnet.sh
 ```
 ## Quantitative Results
  NME2D   | AFLW2000-3D Dataset (68 pts)  | AFLW Dataset (21 pts)
@@ -73,4 +68,4 @@ PFRRNet (Ours)| 2.616, 3.381, 4.342, 3.446, 0.706| 3.976, 4.578, 5.237, 4.597, 0
 
 # Futher Information
 If you have any problems with the code, please list the problems you encountered in the issue area, and I will reply you soon.
-Thanks for  baseline work [3DDFA](https://github.com/cleardusk/3DDFA).
+Thanks for baseline work [3DDFA](https://github.com/cleardusk/3DDFA).
