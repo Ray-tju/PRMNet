@@ -42,12 +42,11 @@ To eval our MFIRRN , use
 ```
 python benchmark.py
 ```
-<img src="https://github.com/leilimaster/MFIRRN/blob/main/display/result.png" width="700" height="400" alt=""/><span>
 <br>
 Note that our GPU is Nvidia RTX 3090, and the test environment is cuda V11.1, Pytorch 1.7.
 
 ## Training
-To train our MFIRRN with wpdc Loss, use
+To train our PFRRNet with wpdc and wing Loss, use
 ```
 cd training
 bash train_wqdc.sh
@@ -70,10 +69,10 @@ RADANet  |2.792, 3.583, 4.495, 3.623, 0.696 | 4.129, 4.888, 5.495, 4.837, 0.559
 PFRRNet (Ours)| 2.616, 3.381, 4.342, 3.446, 0.706| 3.976, 4.578, 5.237, 4.597, 0.515
 
 ## Qualitative Results of Dense Aligment
-<img src="https://github.com/leilimaster/MFIRRN/blob/main/display/Dense.jpg" width="700" height="500">
+<img src="https://github.com/Ray-tju/PFRRNet/blob/main/display/qs_small.jpg" width="400" height="700">
 
 ## Qualitative Results of 3D Reconstruction 
-<img src="https://github.com/leilimaster/MFIRRN/blob/main/display/3d.jpg" width="700" height="400">
+<img src="https://github.com/Ray-tju/PFRRNet/blob/main/display/qs_3d2_samll.jpg" width="400" height="700">
 
 # Futher Information
 If you have any problems with the code, please list the problems you encountered in the issue area, and I will reply you soon.
