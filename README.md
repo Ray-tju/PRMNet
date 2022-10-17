@@ -26,7 +26,7 @@ python3 main.py -f samples/test.jpg
 ```
 Note that we suggest you choose normal image due to dlib restrictions on face capture
 
-* download our pre-trained model [pfrrnet](https://drive.google.com/file/d/1NlI9KH3tcZVA2gsLwbmQTSMUSAQzsFY-/view?usp=sharing
+
 ) via Google
 
 ## Evaluation
