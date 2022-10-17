@@ -24,6 +24,10 @@ To generate results using a trained model, use
 ```
 python3 main.py -f samples/test.jpg 
 ```
+In addition, to quickly generate results using other SOTA methods for you, we add main_{SOTA_method_names} to generate the results:
+```
+python3 main_{other method}.py -f samples/test.jpg 
+```
 Note that we suggest you choose normal image due to dlib restrictions on face capture
 
 
