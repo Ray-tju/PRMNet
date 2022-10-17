@@ -30,10 +30,8 @@ python3 main_{other method}.py -f samples/test.jpg
 ```
 Note that we suggest you choose normal image due to dlib restrictions on face capture
 
-## Pre-Trained Models
+## Pretrained Models
 In order to facilitate everyone to reproduce all the comparison algorithms in this article at one time, we uniformly package their pre-trained models to Google Drive [models](https://drive.google.com/drive/folders/1lyJhEN2WDlicUH2vmOoug6vykacNqfEq?usp=sharing)
-
-) via Google
 
 ## Evaluation
 To eval our PFRRNet , use
