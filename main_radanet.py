@@ -32,7 +32,7 @@ STD_SIZE = 120
 
 def main(args):
     # 1. load pre-tained model
-    checkpoint_fp = '/media/pc/D/lilei/3DDFA-master/model/rardnet.tar'
+    checkpoint_fp = './models/rardnet.tar'
     checkpoint = torch.load(checkpoint_fp, map_location=lambda storage, loc: storage)['state_dict']
     model = ddgl()# 62 = 12(pose) + 40(shape) +10(expression)
 
